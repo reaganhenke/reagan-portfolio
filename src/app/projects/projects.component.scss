@@ -1,0 +1,23 @@
+.project {
+  display: flex;
+  margin: 2rem 0;
+  &:nth-of-type(1){ 
+    margin-top: 0;
+  }
+  img, video{
+    margin-left: 1rem;
+    width: 50%;
+    min-width: 50%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .project {
+    flex-direction: column-reverse;
+    img, video {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}

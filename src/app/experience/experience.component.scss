@@ -1,0 +1,21 @@
+.jobs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.job {
+  width: calc(50% - 1rem);
+  margin-right: 1rem;
+}
+
+ul {
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+}
+
+@media screen and (max-width: 800px) {
+  .job {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
