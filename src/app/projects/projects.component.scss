@@ -9,7 +9,7 @@
   flex-direction: column;
   box-sizing: border-box;
   margin: 2rem 0;
-  width: 32%;
+  width: 23%;
   
   img, video{
     width: 100%;
@@ -38,6 +38,12 @@
       white-space: nowrap;
       padding: 0.15rem 0.25rem;
     }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .project {
+    width: 32%;
   }
 }
 
