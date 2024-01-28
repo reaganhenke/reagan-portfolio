@@ -94,6 +94,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "reagan-portfolio:build:production",
+              "serveTarget": "reagan-portfolio:serve:production"
+            },
+            "development": {
+              "buildTarget": "reagan-portfolio:build:development",
+              "serveTarget": "reagan-portfolio:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

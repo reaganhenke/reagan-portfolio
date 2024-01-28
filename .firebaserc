@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "reaganportfolio-312cf"
+  },
+  "targets": {
+    "reaganportfolio-312cf": {
+      "hosting": {
+        "reagan-portfolio": [
+          "reaganportfolio-312cf"
+        ]
+      }
+    }
   }
 }
