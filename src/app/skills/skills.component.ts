@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent implements OnInit {
-  skills = ['angular', 'javascript', 'css', 'react', 'web design', 'nodeJS', 'python', 'c#', 'public speaking', 'game design', 'html'];
+  skills = ['angular', 'javascript', 'css', 'react', 'web design', 'nodeJS', 'python', 'c#', 'public speaking', 'game design', 'html', 'unity', 'illustration'];
   skillPositions: string[][] = [];
   currentlyDragging: number | undefined;
   mouseX: number | undefined;

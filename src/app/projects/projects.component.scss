@@ -1,23 +1,54 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .project {
   display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   margin: 2rem 0;
-  &:nth-of-type(1){ 
-    margin-top: 0;
-  }
+  width: 32%;
+  
   img, video{
-    margin-left: 1rem;
-    width: 50%;
-    min-width: 50%;
+    width: 100%;
+    min-width: 100%;
     object-fit: contain;
   }
 }
 
-@media screen and (max-width: 800px) {
-  .project {
-    flex-direction: column-reverse;
-    img, video {
-      margin: 0;
-      width: 100%;
+.skills {
+  margin-left: -0.25rem;
+  h4 {
+    font-size: 0.75rem;
+    color: #e3e3e3;
+    font-style: italic;
+    margin-left: 0.25rem;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    span {
+      background-color: #e3e3e3;
+      color: #21343c;
+      border-radius: 4px;
+      margin: 0.25rem;
+      font-size: 0.8rem;
+      white-space: nowrap;
+      padding: 0.15rem 0.25rem;
     }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .project {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .project {
+    width: 100%;
   }
 }
