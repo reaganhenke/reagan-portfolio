@@ -1,3 +1,7 @@
+.dark-section {
+  position: relative;
+}
+
 .jobs {
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +15,18 @@
 ul {
   font-size: 0.9rem;
   line-height: 1.25rem;
+}
+
+.resume {
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  color: #e3e3e3;
+  font-size: 0.75rem;
+  img {
+    margin-right: 8px;
+    width: 14px;
+  }
 }
 
 @media screen and (max-width: 800px) {
